@@ -33,6 +33,7 @@ HINT: Use the modulo operator (%) Google it! 😊
 
 export const oddOrEven = () => {
   //your code here
+  1 % 0
 };
 
 /******************************************************************************
