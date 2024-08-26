@@ -15,8 +15,7 @@ Read the terminal output before and after to see the difference
 ******************************************************************************/
 
 export function start() {
-  //your code here
-  return true;
+  return true
 };
 
 /******************************************************************************
@@ -31,9 +30,11 @@ received is an even number.
 HINT: Use the modulo operator (%) Google it! 😊
 ******************************************************************************/
 
-export const oddOrEven = () => {
-  //your code here
-  1 % 0
+export const oddOrEven = (number) => {
+  if (number % 2 == 0)
+  return "Even"
+  else (number % 2 == 1)
+  return "Odd"
 };
 
 /******************************************************************************
@@ -48,11 +49,9 @@ Example: "This is cool" should return "THIS IS COOL!"
 
 ******************************************************************************/
 
-export function makeMeLoud() {
-  //your code here
-  string("This is cool")
-  console.log(convertToUpperCase("THIS IS COOL!"))
-  return
+export function makeMeLoud(inputString) {
+  return inputString.toUpperCase() + "!";
+
 }
 
 /******************************************************************************
