@@ -50,6 +50,9 @@ Example: "This is cool" should return "THIS IS COOL!"
 
 export function makeMeLoud() {
   //your code here
+  string("This is cool")
+  console.log(convertToUpperCase("THIS IS COOL!"))
+  return
 }
 
 /******************************************************************************
