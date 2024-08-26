@@ -144,8 +144,12 @@ Example3: "   hard        " should return "fun"
 
 ******************************************************************************/
 
-export const cleanAndFun = () => {
-  //your code here
+export const cleanAndFun = (text) => {
+  let cleanedText = text.trim()
+
+  cleanedText = cleanedText.replace('hard', 'fun');
+
+  return cleanedText;
 };
 
 /******************************************************************************
@@ -168,8 +172,19 @@ Use array methods to do the following:
  Return the resulting array.
 ******************************************************************************/
 
-export function marvelEditor() {
-  //your code here
+export function marvelEditor(heroes) {
+  heroes.shift();
+
+    const indexOfDoctorStrange = heroes.indexOf("Doctor Strange");
+    if (indexOfDoctorStrange !== -1) {
+      heroes[indexOfDoctorStrange] = "Skrull";
+    }
+  
+    const indexOfThor = heroes.indexOf("Thor");
+    if (indexOfThor !== -1) {
+      heroes.splice(indexOfThor, 2, "Captain America"); 
+    }
+    return heroes.join("💪");
 }
 
 /******************************************************************************
